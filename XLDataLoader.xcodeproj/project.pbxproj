@@ -25,6 +25,9 @@
 		28E1DDD8181AB89D00E7FAF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E1DDBA181AB89D00E7FAF9 /* UIKit.framework */; };
 		28E1DDE0181AB89D00E7FAF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28E1DDDE181AB89D00E7FAF9 /* InfoPlist.strings */; };
 		28E1DDE2181AB89D00E7FAF9 /* XLDataLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E1DDE1181AB89D00E7FAF9 /* XLDataLoaderTests.m */; };
+		3C1284001909569A0071A9D2 /* Cap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C1283FF1909569A0071A9D2 /* Cap.gif */; };
+		3C128403190956A60071A9D2 /* Model.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C128401190956A60071A9D2 /* Model.jpg */; };
+		3C128404190956A60071A9D2 /* XLDataLoader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C128402190956A60071A9D2 /* XLDataLoader.jpg */; };
 		3C951F571906E5210016552A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C951F561906E5210016552A /* Images.xcassets */; };
 		3CAE20631906DE20001B53CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAE20231906DE20001B53CB /* AppDelegate.m */; };
 		3CAE20641906DE20001B53CB /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAE20271906DE20001B53CB /* PostsTableViewController.m */; };
@@ -97,6 +100,9 @@
 		28E1DDDD181AB89D00E7FAF9 /* XLDataLoaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XLDataLoaderTests-Info.plist"; sourceTree = "<group>"; };
 		28E1DDDF181AB89D00E7FAF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28E1DDE1181AB89D00E7FAF9 /* XLDataLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLDataLoaderTests.m; sourceTree = "<group>"; };
+		3C1283FF1909569A0071A9D2 /* Cap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Cap.gif; path = Images/Cap.gif; sourceTree = "<group>"; };
+		3C128401190956A60071A9D2 /* Model.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Model.jpg; path = Images/Model.jpg; sourceTree = "<group>"; };
+		3C128402190956A60071A9D2 /* XLDataLoader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = XLDataLoader.jpg; path = Images/XLDataLoader.jpg; sourceTree = "<group>"; };
 		3C951F561906E5210016552A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3CAE20221906DE20001B53CB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CAE20231906DE20001B53CB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -303,9 +309,20 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		3C1283FE190956100071A9D2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C128401190956A60071A9D2 /* Model.jpg */,
+				3C128402190956A60071A9D2 /* XLDataLoader.jpg */,
+				3C1283FF1909569A0071A9D2 /* Cap.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		3CAE20211906DD89001B53CB /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				3C1283FE190956100071A9D2 /* Images */,
 				3CAE20221906DE20001B53CB /* AppDelegate.h */,
 				3CAE20231906DE20001B53CB /* AppDelegate.m */,
 				3CAE20241906DE20001B53CB /* Controllers */,
@@ -529,6 +546,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1284001909569A0071A9D2 /* Cap.gif in Resources */,
+				3C128404190956A60071A9D2 /* XLDataLoader.jpg in Resources */,
+				3C128403190956A60071A9D2 /* Model.jpg in Resources */,
 				28E1DDC1181AB89D00E7FAF9 /* InfoPlist.strings in Resources */,
 				3C951F571906E5210016552A /* Images.xcassets in Resources */,
 			);

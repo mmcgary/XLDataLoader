@@ -243,13 +243,14 @@
                                              selector:@selector(contentSizeCategoryDidChange:)
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
-    if (self.showNetworkReachability && self.remoteDataLoader){
-        [self updateNetworkReachabilityView];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(networkingReachabilityDidChange:)
-                                                     name:AFNetworkingReachabilityDidChangeNotification
-                                                   object:nil];
-    }
+// TODO: for AFNetworking 1.*, this doesn't work
+//    if (self.showNetworkReachability && self.remoteDataLoader){
+//        [self updateNetworkReachabilityView];
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(networkingReachabilityDidChange:)
+//                                                     name:AFNetworkingReachabilityDidChangeNotification
+//                                                   object:nil];
+//    }
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -396,16 +397,17 @@
 
 -(void)updateNetworkReachabilityView
 {
-    if (![self.remoteDataLoader.sessionManager.reachabilityManager networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable){
-        if ([self.networkStatusView superview]){
-            [self.networkStatusView removeFromSuperview];
-        }
-    }
-    else{
-        if (![self.networkStatusView superview]){
-            [self.tableView addSubview:self.networkStatusView];
-        }
-    }
+    // TODO: AFNetworking 1.* doesn't support reachability
+//    if (![self.remoteDataLoader.sessionManager.reachabilityManager networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable){
+//        if ([self.networkStatusView superview]){
+//            [self.networkStatusView removeFromSuperview];
+//        }
+//    }
+//    else{
+//        if (![self.networkStatusView superview]){
+//            [self.tableView addSubview:self.networkStatusView];
+//        }
+//    }
 }
 
 -(UITableView *)localDataLoaderTable:(XLLocalDataLoader *)localDataLoader

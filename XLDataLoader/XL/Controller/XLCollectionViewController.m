@@ -231,10 +231,10 @@
                                                object:nil];
     if (self.showNetworkReachability && self.remoteDataLoader){
         [self updateNetworkReachabilityView];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(networkingReachabilityDidChange:)
-                                                     name:AFNetworkingReachabilityDidChangeNotification
-                                                   object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(networkingReachabilityDidChange:)
+//                                                     name:AFNetworkingReachabilityDidChangeNotification
+//                                                   object:nil];
     }
 }
 
@@ -371,16 +371,16 @@
 
 -(void)updateNetworkReachabilityView
 {
-    if (![self.remoteDataLoader.sessionManager.reachabilityManager networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable){
-        if ([self.networkStatusView superview]){
-            [self.networkStatusView removeFromSuperview];
-        }
-    }
-    else{
-        if (![self.networkStatusView superview]){
-            [self.collectionView addSubview:self.networkStatusView];
-        }
-    }
+//    if (![self.remoteDataLoader.sessionManager.reachabilityManager networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable){
+//        if ([self.networkStatusView superview]){
+//            [self.networkStatusView removeFromSuperview];
+//        }
+//    }
+//    else{
+//        if (![self.networkStatusView superview]){
+//            [self.collectionView addSubview:self.networkStatusView];
+//        }
+//    }
 }
 
 #pragma mark - UICollectionViewDataSource

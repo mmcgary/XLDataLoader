@@ -87,7 +87,8 @@ NSString * const kXLRemoteDataLoaderDefaultKeyForNonDictionaryResponse;
 -(NSDictionary *)parameters;
 
 // You must override this method.
--(AFHTTPSessionManager *)sessionManager;
+//-(AFHTTPSessionManager *)sessionManager;
+-(AFHTTPClient *)httpClient;
 
 //////////////////////////////////////////////////////////////////////////////////////////
 

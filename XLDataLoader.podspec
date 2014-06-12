@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/mmcgary/XLDataLoader.git', :tag => 'v1.0.1'}
   s.source_files = 'XLDataLoader/XL/**/*.{h,m}'
   s.requires_arc = true
-  s.dependency 'AFNetworking', '~> '1.3.3'
+  s.dependency 'AFNetworking', '~> 1.3.3'
   s.ios.deployment_target = '6.0'
   s.ios.frameworks = 'UIKit', 'Foundation'
 end
